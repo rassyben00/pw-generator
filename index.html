@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cffed4b148.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Password Generator</div>
+        <div class="main-password">
+            <div class="generated-password" id="generated-password">A3e!!9Ueg</div>
+            <div class="icons">
+                <div class="refresh" id="refresh">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </div>
+                <div class="copy" id="copy">
+                    <i class="fa-solid fa-copy"></i>
+                </div>
+            </div>
+        </div> 
+        <div class="main-options">
+            <div class="length">
+                <div class="length-title">Character Length</div>
+                <div class="length-value" id="length-value">9</div>
+            </div>
+            <div class="slider-container">
+                <input class="slider" type="range" name="range" id="range" min="4" max="14">
+            </div>
+            <div class="checkboxes">
+                <div class="uppercase box">
+                    <input checked class="checkbox" type="checkbox" name="uppercase" id="uppercase">
+                    <div class="checklabel">Include Uppercase Letters</div>
+                </div>
+                <div class="lowercase box">
+                    <input checked class="checkbox" type="checkbox" name="lowercase" id="lowercase">
+                    <div class="checklabel">Include Lowercase Letters</div>
+                </div>
+                <div class="number box">
+                    <input checked class="checkbox" type="checkbox" name="number" id="number">
+                    <div class="checklabel">Include Numbers</div>
+                </div>
+                <div class="symbol box">
+                    <input checked class="checkbox" type="checkbox" name="symbol" id="symbol">
+                    <div class="checklabel">Include Symbols</div>
+                </div>
+            </div>
+        </div>
+        <div class="note-container">
+            <div class="note">Note! This concept is based on random values. <br>It does not necessarily mean, that it will <br>contain ALL the checked conditions.</div>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
